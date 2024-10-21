@@ -8,11 +8,14 @@ html {
 
 body {
   margin: 0;
-  background-image: linear-gradient(75deg, hsl(234deg 30% 80%), hsl(34deg 30% 80%));
+  background-image: linear-gradient(
+    75deg,
+    hsl(234deg 30% 80%),
+    hsl(34deg 30% 80%)
+  );
   background-size: cover;
   min-height: -moz-fit-content;
   min-height: fit-content;
-
 }
 
 #app {
@@ -22,10 +25,12 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
-input, button {
+input,
+button {
   border-radius: 0.5em;
 }
-label, input {
+label,
+input {
   margin-bottom: 0.5rem;
   padding: 0.25em;
   display: block;
@@ -46,4 +51,7 @@ li {
   margin: 1rem 0;
   padding: 1rem;
   border: 1px solid #ccc;
+  &.done {
+    text-decoration: line-through;
+  }
 }
